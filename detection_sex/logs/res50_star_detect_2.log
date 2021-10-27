@@ -1,0 +1,214 @@
+INFO:root:2021-10-22 11:23:19.278347
+INFO:root:{'TRAIN': {'LEARNING_RATE': 0.0001, 'MOMENTUM': 0.9, 'WEIGHT_DECAY': 0.0001, 'GAMMA': 0.1, 'STEPSIZE': [30000], 'DISPLAY': 20, 'DOUBLE_BIAS': False, 'TRUNCATED': False, 'BIAS_DECAY': False, 'USE_GT': False, 'ASPECT_GROUPING': False, 'SNAPSHOT_KEPT': 3, 'SUMMARY_INTERVAL': 180, 'SCALES': [600], 'MAX_SIZE': 1000, 'TRIM_HEIGHT': 600, 'TRIM_WIDTH': 600, 'IMS_PER_BATCH': 1, 'FG_FRACTION': 0.25, 'FG_THRESH': 0.5, 'BG_THRESH_HI': 0.5, 'BG_THRESH_LO': 0.0, 'USE_FLIPPED': True, 'BBOX_REG': True, 'BBOX_THRESH': 0.5, 'SNAPSHOT_ITERS': 5000, 'SNAPSHOT_PREFIX': 'res50_faster_rcnn', 'BBOX_NORMALIZE_TARGETS': True, 'BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'BBOX_NORMALIZE_TARGETS_PRECOMPUTED': True, 'BBOX_NORMALIZE_MEANS': [0.0, 0.0, 0.0, 0.0], 'BBOX_NORMALIZE_STDS': [0.1, 0.1, 0.2, 0.2], 'PROPOSAL_METHOD': 'gt', 'HAS_RPN': True, 'RPN_POSITIVE_OVERLAP': 0.7, 'RPN_NEGATIVE_OVERLAP': 0.3, 'RPN_CLOBBER_POSITIVES': False, 'RPN_FG_FRACTION': 0.5, 'BATCH_SIZE': 128, 'RPN_BATCHSIZE': 256, 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 12000, 'RPN_POST_NMS_TOP_N': 2000, 'RPN_MIN_SIZE': 4, 'RPN_BBOX_INSIDE_WEIGHTS': [1.0, 1.0, 1.0, 1.0], 'RPN_POSITIVE_WEIGHT': -1.0, 'USE_ALL_GT': True, 'BN_TRAIN': False}, 'TEST': {'SCALES': [600], 'MAX_SIZE': 1000, 'NMS': 0.3, 'SVM': False, 'BBOX_REG': True, 'HAS_RPN': True, 'PROPOSAL_METHOD': 'gt', 'RPN_NMS_THRESH': 0.7, 'RPN_PRE_NMS_TOP_N': 6000, 'RPN_POST_NMS_TOP_N': 300, 'RPN_MIN_SIZE': 6, 'MODE': 'nms', 'RPN_TOP_N': 5000}, 'RESNET': {'MAX_POOL': False, 'FIXED_BLOCKS': 1}, 'MOBILENET': {'REGU_DEPTH': False, 'FIXED_LAYERS': 5, 'WEIGHT_DECAY': 4e-05, 'DEPTH_MULTIPLIER': 1.0}, 'DEDUP_BOXES': 0.0625, 'PIXEL_MEANS': array([[[102.9801, 115.9465, 122.7717]]]), 'RNG_SEED': 3, 'EPS': 1e-14, 'ROOT_DIR': '/home/lab30201/sdb/slc/sex_platform_V1/detection_sex', 'DATA_DIR': '/home/lab30201/sdb/slc/sex_platform_V1/detection_sex/data', 'MATLAB': 'matlab', 'EXP_DIR': 'res50', 'USE_GPU_NMS': True, 'GPU_ID': '0', 'POOLING_MODE': 'align', 'POOLING_SIZE': 7, 'MAX_NUM_GT_BOXES': 100, 'ANCHOR_SCALES': [2, 4, 6], 'ANCHOR_RATIOS': [0.5, 1, 2], 'FEAT_STRIDE': [2], 'FPN_ANCHOR_SCALES': [1, 2, 4, 8, 16], 'FPN_FEAT_STRIDES': [1, 2, 4, 8, 16], 'FPN_ANCHOR_STRIDE': 1, 'CUDA': False, 'CROP_RESIZE_WITH_MAX_POOL': False, 'HAS_MASK': True}
+INFO:root:Train: 768 roidb entries
+INFO:root:[session 2][epoch  1][iter    0/ 768] loss: 10.0895, lr: 5.00e-05
+INFO:root:			fg/bg=(19/109), time cost: 0.399800
+INFO:root:			rpn_cls: 0.6932, rpn_box: 0.0424, rcnn_cls: 4.1677, rcnn_box 0.0621,reg_loss 5.1241, 
+INFO:root:[session 2][epoch  1][iter  100/ 768] loss: 6.8562, lr: 5.00e-05
+INFO:root:			fg/bg=(14/114), time cost: 31.312271
+INFO:root:			rpn_cls: 0.0706, rpn_box: 0.0112, rcnn_cls: 0.4501, rcnn_box 0.0426,reg_loss 4.8384, 
+INFO:root:[session 2][epoch  1][iter  200/ 768] loss: 5.3996, lr: 5.00e-05
+INFO:root:			fg/bg=(15/113), time cost: 30.132926
+INFO:root:			rpn_cls: 0.0684, rpn_box: 0.0229, rcnn_cls: 0.4021, rcnn_box 0.0451,reg_loss 4.5838, 
+INFO:root:[session 2][epoch  1][iter  300/ 768] loss: 5.1467, lr: 5.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.083109
+INFO:root:			rpn_cls: 0.1197, rpn_box: 0.0805, rcnn_cls: 0.4918, rcnn_box 0.0798,reg_loss 4.3406, 
+INFO:root:[session 2][epoch  1][iter  400/ 768] loss: 4.9160, lr: 5.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.344734
+INFO:root:			rpn_cls: 0.0554, rpn_box: 0.0187, rcnn_cls: 0.2719, rcnn_box 0.2527,reg_loss 4.1272, 
+INFO:root:[session 2][epoch  1][iter  500/ 768] loss: 4.6670, lr: 5.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.414859
+INFO:root:			rpn_cls: 0.1097, rpn_box: 0.0456, rcnn_cls: 0.3331, rcnn_box 0.1415,reg_loss 3.9633, 
+INFO:root:[session 2][epoch  1][iter  600/ 768] loss: 4.4150, lr: 5.00e-05
+INFO:root:			fg/bg=(31/97), time cost: 29.707420
+INFO:root:			rpn_cls: 0.1017, rpn_box: 0.0143, rcnn_cls: 0.2092, rcnn_box 0.1172,reg_loss 3.8393, 
+INFO:root:[session 2][epoch  1][iter  700/ 768] loss: 4.1874, lr: 5.00e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.818615
+INFO:root:			rpn_cls: 0.0518, rpn_box: 0.0085, rcnn_cls: 0.1154, rcnn_box 0.0895,reg_loss 3.7361, 
+INFO:root:number   1 epoch 's map: 0.2580
+INFO:root:save model: /home/lab30201/sdb/slc/sex_platform_V1/model_save/res50/star_detect/fpn_2_1_767.pth
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/usr/local/python38/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0.
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneral.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-BoldItalic.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Oblique.ttf) oblique normal 400 normal>) = 1.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-BoldOblique.ttf) oblique normal 700 normal>) = 1.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralItalic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Italic.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniBolIta.ttf) italic normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmex10' (cmex10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFourSym' (STIXSizFourSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmr10' (cmr10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXGeneral' (STIXGeneralBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeOneSym' (STIXSizOneSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Display' (DejaVuSansDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif Display' (DejaVuSerifDisplay.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Oblique.ttf) oblique normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUniIta.ttf) italic normal 400 normal>) = 11.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmmi10' (cmmi10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmsy10' (cmsy10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeFiveSym' (STIXSizFiveSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeTwoSym' (STIXSizTwoSymBol.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmss10' (cmss10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-BoldOblique.ttf) oblique normal 700 normal>) = 11.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXSizeThreeSym' (STIXSizThreeSymReg.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'STIXNonUnicode' (STIXNonUni.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmb10' (cmb10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'cmtt10' (cmtt10.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans.ttf) normal normal 400 normal>) = 0.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans' (DejaVuSans-Bold.ttf) normal normal 700 normal>) = 0.33499999999999996
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Serif' (DejaVuSerif-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono-Bold.ttf) normal normal 700 normal>) = 10.335
+DEBUG:matplotlib.font_manager:findfont: score(<Font 'DejaVu Sans Mono' (DejaVuSansMono.ttf) normal normal 400 normal>) = 10.05
+DEBUG:matplotlib.font_manager:findfont: Matching sans\-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/usr/local/python38/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000.
+INFO:root:[session 2][epoch  2][iter    0/ 768] loss: 3.8395, lr: 7.50e-05
+INFO:root:			fg/bg=(21/107), time cost: 0.376213
+INFO:root:			rpn_cls: 0.0528, rpn_box: 0.0056, rcnn_cls: 0.0636, rcnn_box 0.0446,reg_loss 3.6730, 
+INFO:root:[session 2][epoch  2][iter  100/ 768] loss: 3.9538, lr: 7.50e-05
+INFO:root:			fg/bg=(19/109), time cost: 29.855022
+INFO:root:			rpn_cls: 0.0529, rpn_box: 0.0055, rcnn_cls: 0.0667, rcnn_box 0.0729,reg_loss 3.5496, 
+INFO:root:[session 2][epoch  2][iter  200/ 768] loss: 3.7716, lr: 7.50e-05
+INFO:root:			fg/bg=(32/96), time cost: 29.982261
+INFO:root:			rpn_cls: 0.0344, rpn_box: 0.0080, rcnn_cls: 0.1353, rcnn_box 0.0737,reg_loss 3.4366, 
+INFO:root:[session 2][epoch  2][iter  300/ 768] loss: 3.6501, lr: 7.50e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.455721
+INFO:root:			rpn_cls: 0.0612, rpn_box: 0.0311, rcnn_cls: 0.1934, rcnn_box 0.1283,reg_loss 3.3324, 
+INFO:root:[session 2][epoch  2][iter  400/ 768] loss: 3.5274, lr: 7.50e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.776189
+INFO:root:			rpn_cls: 0.0419, rpn_box: 0.0115, rcnn_cls: 0.0514, rcnn_box 0.1005,reg_loss 3.2350, 
+INFO:root:[session 2][epoch  2][iter  500/ 768] loss: 3.4253, lr: 7.50e-05
+INFO:root:			fg/bg=(32/96), time cost: 30.181474
+INFO:root:			rpn_cls: 0.0398, rpn_box: 0.0129, rcnn_cls: 0.0801, rcnn_box 0.0519,reg_loss 3.1439, 
+INFO:root:[session 2][epoch  2][iter  600/ 768] loss: 3.3221, lr: 7.50e-05
+INFO:root:			fg/bg=(29/99), time cost: 30.972749
+INFO:root:			rpn_cls: 0.0267, rpn_box: 0.0043, rcnn_cls: 0.0332, rcnn_box 0.0327,reg_loss 3.0572, 
+INFO:root:[session 2][epoch  2][iter  700/ 768] loss: 3.2453, lr: 7.50e-05
+INFO:root:			fg/bg=(32/96), time cost: 29.221095
+INFO:root:			rpn_cls: 0.0742, rpn_box: 0.0312, rcnn_cls: 0.0982, rcnn_box 0.0691,reg_loss 2.9761, 
+INFO:root:number   2 epoch 's map: 0.6664
+INFO:root:save model: /home/lab30201/sdb/slc/sex_platform_V1/model_save/res50/star_detect/fpn_2_2_767.pth
+INFO:root:[session 2][epoch  3][iter    0/ 768] loss: 3.0778, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.331377
+INFO:root:			rpn_cls: 0.0066, rpn_box: 0.0065, rcnn_cls: 0.0805, rcnn_box 0.0615,reg_loss 2.9227, 
+INFO:root:[session 2][epoch  3][iter  100/ 768] loss: 3.0870, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.226602
+INFO:root:			rpn_cls: 0.0186, rpn_box: 0.0206, rcnn_cls: 0.1529, rcnn_box 0.0713,reg_loss 2.8238, 
+INFO:root:[session 2][epoch  3][iter  200/ 768] loss: 2.9997, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.225947
+INFO:root:			rpn_cls: 0.0371, rpn_box: 0.0158, rcnn_cls: 0.0837, rcnn_box 0.0575,reg_loss 2.7306, 
+INFO:root:[session 2][epoch  3][iter  300/ 768] loss: 2.8814, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 31.196162
+INFO:root:			rpn_cls: 0.0448, rpn_box: 0.0313, rcnn_cls: 0.1361, rcnn_box 0.1019,reg_loss 2.6413, 
+INFO:root:[session 2][epoch  3][iter  400/ 768] loss: 2.8109, lr: 1.00e-04
+INFO:root:			fg/bg=(29/99), time cost: 29.967387
+INFO:root:			rpn_cls: 0.0133, rpn_box: 0.0041, rcnn_cls: 0.0560, rcnn_box 0.0466,reg_loss 2.5586, 
+INFO:root:[session 2][epoch  3][iter  500/ 768] loss: 2.7224, lr: 1.00e-04
+INFO:root:			fg/bg=(21/107), time cost: 30.781597
+INFO:root:			rpn_cls: 0.0221, rpn_box: 0.0017, rcnn_cls: 0.0415, rcnn_box 0.0360,reg_loss 2.4795, 
+INFO:root:[session 2][epoch  3][iter  600/ 768] loss: 2.6402, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.827518
+INFO:root:			rpn_cls: 0.0350, rpn_box: 0.0050, rcnn_cls: 0.0735, rcnn_box 0.0430,reg_loss 2.4027, 
+INFO:root:[session 2][epoch  3][iter  700/ 768] loss: 2.5530, lr: 1.00e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.698554
+INFO:root:			rpn_cls: 0.0176, rpn_box: 0.0016, rcnn_cls: 0.0380, rcnn_box 0.0389,reg_loss 2.3307, 
+INFO:root:number   3 epoch 's map: 0.7071
+INFO:root:save model: /home/lab30201/sdb/slc/sex_platform_V1/model_save/res50/star_detect/fpn_2_3_767.pth
+INFO:root:[session 2][epoch  4][iter    0/ 768] loss: 2.3952, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.346852
+INFO:root:			rpn_cls: 0.0137, rpn_box: 0.0022, rcnn_cls: 0.0498, rcnn_box 0.0462,reg_loss 2.2832, 
+INFO:root:[session 2][epoch  4][iter  100/ 768] loss: 2.4118, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.913744
+INFO:root:			rpn_cls: 0.0268, rpn_box: 0.0115, rcnn_cls: 0.1837, rcnn_box 0.0477,reg_loss 2.2004, 
+INFO:root:[session 2][epoch  4][iter  200/ 768] loss: 2.3433, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.195078
+INFO:root:			rpn_cls: 0.0400, rpn_box: 0.0276, rcnn_cls: 0.1059, rcnn_box 0.1323,reg_loss 2.1232, 
+INFO:root:[session 2][epoch  4][iter  300/ 768] loss: 2.2812, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.582953
+INFO:root:			rpn_cls: 0.0117, rpn_box: 0.0109, rcnn_cls: 0.1382, rcnn_box 0.0941,reg_loss 2.0494, 
+INFO:root:[session 2][epoch  4][iter  400/ 768] loss: 2.1953, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.749814
+INFO:root:			rpn_cls: 0.0290, rpn_box: 0.0214, rcnn_cls: 0.0960, rcnn_box 0.1082,reg_loss 1.9796, 
+INFO:root:[session 2][epoch  4][iter  500/ 768] loss: 2.1464, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.803072
+INFO:root:			rpn_cls: 0.0099, rpn_box: 0.0028, rcnn_cls: 0.0619, rcnn_box 0.0800,reg_loss 1.9128, 
+INFO:root:[session 2][epoch  4][iter  600/ 768] loss: 2.0699, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.900684
+INFO:root:			rpn_cls: 0.0169, rpn_box: 0.0049, rcnn_cls: 0.0785, rcnn_box 0.0367,reg_loss 1.8495, 
+INFO:root:[session 2][epoch  4][iter  700/ 768] loss: 1.9892, lr: 1.25e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.964473
+INFO:root:			rpn_cls: 0.0536, rpn_box: 0.0228, rcnn_cls: 0.1739, rcnn_box 0.0977,reg_loss 1.7899, 
+INFO:root:number   4 epoch 's map: 0.7159
+INFO:root:save model: /home/lab30201/sdb/slc/sex_platform_V1/model_save/res50/star_detect/fpn_2_4_767.pth
+INFO:root:[session 2][epoch  5][iter    0/ 768] loss: 2.0877, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 0.318630
+INFO:root:			rpn_cls: 0.0474, rpn_box: 0.0460, rcnn_cls: 0.1657, rcnn_box 0.0746,reg_loss 1.7540, 
+INFO:root:[session 2][epoch  5][iter  100/ 768] loss: 1.9165, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.327636
+INFO:root:			rpn_cls: 0.0244, rpn_box: 0.0238, rcnn_cls: 0.1091, rcnn_box 0.0956,reg_loss 1.6893, 
+INFO:root:[session 2][epoch  5][iter  200/ 768] loss: 1.8229, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.668355
+INFO:root:			rpn_cls: 0.0073, rpn_box: 0.0053, rcnn_cls: 0.1549, rcnn_box 0.0373,reg_loss 1.6277, 
+INFO:root:[session 2][epoch  5][iter  300/ 768] loss: 1.7901, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 29.646544
+INFO:root:			rpn_cls: 0.0180, rpn_box: 0.0157, rcnn_cls: 0.0863, rcnn_box 0.0598,reg_loss 1.5703, 
+INFO:root:[session 2][epoch  5][iter  400/ 768] loss: 1.7297, lr: 1.50e-04
+INFO:root:			fg/bg=(32/96), time cost: 30.225208
+INFO:root:			rpn_cls: 0.0450, rpn_box: 0.0208, rcnn_cls: 0.1056, rcnn_box 0.0465,reg_loss 1.5170, 
